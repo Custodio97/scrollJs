@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-child(odd){
+    background: black;
+}
+
+section:nth-child(even){
+    background: yellow;
+}
+
+div{
+    width: 30vh;
+    height: 30vh;
+    background: transparent;
+    border: 5vh solid var(--c);
+}
+
+.reveal.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.reveal{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: .5s all ease;
+}
